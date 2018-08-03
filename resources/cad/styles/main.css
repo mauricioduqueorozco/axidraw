@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/08/2014, 08:24:28 AM
+    Author     : root
+*/
+
+html, body
+{
+background-color: #333;
+font-family: sans-serif;
+margin: 0;
+padding: 0;
+background: #1C313F;
+}
+#info{
+  
+   font-family: cursive;
+   position: absolute;
+   top: 700px;
+   left: 50px;
+   color: white;
+   font-size: 10px;
+}
+#paper2{
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    z-index: 1;
+}
+#sub-menu{
+    float: right;
+    left: 50px;
+    z-index: 3;
+}
+canvas{
+  position: absolute;
+  top:  120px; 
+  left: 50px;  
+  z-index: 0;
+}
+#my-gui-container{
+    float: end;
+}
+#my-gui_G-container{
+    float: end;
+}
+#btn-compile-gcode , #btn-save-file , #btn-open-file{
+    cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding:5px 25px; /*add some padding to the inside of the button*/
+    //background:#35b128; /*the colour of the button*/
+    background: #707070;
+    border:1px solid #33842a; /*required or the default border for the browser will appear*/
+    /*give the button curved corners, alter the size as required*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*give the button a drop shadow*/
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    /*style the text*/
+    color:#f3f3f3;
+    font-size:0.8em;
+}
+
+
+
+.container{
+
+width: 400px;
+height: 150px;
+margin: auto;
+z-index: 2;
+float: right;
+}
+nav {
+ text-align: center; 
+ color: whitesmoke;
+ font-family: cursive;
+ font-size: 25px;
+ background: #2B81AF;
+ border-bottom: 2px solid #556B2F;
+ height: 24px;
+ padding: 0.5em
+}
+
+a{
+   color: #09BDDC;
+   font-size: 15px;
+   float: right;
+}
+.warning {
+ color: #a94442;
+ background: #f2dede;
+ border: solid 1px #ebccd1;
+ border-radius: 2px;
+ margin: 0.25em;
+ padding: 0.25em;
+}

@@ -1,0 +1,59 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+function Codexg(){
+    //this.components = new Array();
+    
+    this.name = '';
+    this.units = '';
+    this.z_x = 0;
+    this.z_y = 0;
+    this.max_size_x = 100;
+    this.max_size_y = 100;
+    this.spindle_speed = 900;
+    this.type_machine = 'Fresa';
+    this.wise = "clock";
+    this.security_zone = 100;
+    this.bit_diameter = 0.125;
+    this.feed_rate = 15;
+    this.plunge_rate = 5;
+    this.z_step_size = 0.1;
+    this.default_depth = 0.5;
+    this.cuts = new Array();
+    
+    
+};
+
+
+
+Codexg.prototype.addCuts = function (cut){
+  this.cuts.push(cut);  
+};
+
+Codexg.prototype.exportYAML = function(){
+    //return json2yaml(this.components);
+    return json2yaml(JSON.stringify(this.cuts));  
+    //return json2yaml(JSON.stringify(yaml)); 
+};
+
+Codexg.prototype.init = function(){
+    //alert('codexg');
+    this.test();
+    //console.log(this.exportYAML());
+};
+
+Codexg.prototype.test = function(){
+   
+   
+   
+   
+   this.cuts.push(new Drill(1,2,5,6));
+   this.cuts.push(new Drill(15,22,55,66));
+   this.cuts.push(new Drill(1,2));
+  
+   
+};
+
